@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="SIMP-ignition-models", # Replace with your own username
+    name="SIMP", # Replace with your own username
     version="0.0.1",
     author="Dawson Horvath",
     author_email="horvath.dawson@gmail.com",
@@ -12,7 +12,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Baesian-Balancer/SIMP",
-    packages=setuptools.find_packages(),
+    packages=['SIMP'],
+    include_package_data=True,    
+    install_requires=['pathlib', 'typing'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
