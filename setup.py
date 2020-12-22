@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="SIMP-ignition-models", # Replace with your own username
     version="0.0.1",
-    author="Example Author",
+    author="Dawson Horvath",
     author_email="horvath.dawson@gmail.com",
-    description="A small example package",
+    description="monopod models for baesian balancing capstone team 2020.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Baesian-Balancer/SIMP",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
