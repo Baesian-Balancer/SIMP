@@ -176,7 +176,7 @@
     type="continuous">
     <origin
       xyz="0 0 1.4843"
-      rpy="3.1416 0 -1.57" />
+      rpy="3.14159 0 -1.57" />
     <parent
       link="boom_link" />
     <child
@@ -207,7 +207,7 @@
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
-      <geometry>https://pulurobotics.fi/blog/pulurobotics-blog-1/post/why-don-t-we-use-ros-7
+      <geometry>
         <mesh
           filename="package://monopod_v1/meshes/upper_leg_Link.STL" />
       </geometry>
@@ -231,14 +231,14 @@
     name="upper_leg_joint"
     type="continuous">
     <origin
-      xyz="-0.03 0.02 0"
-      rpy="0.17161 -1.5708 -2.5959" />
+      xyz="-0.03 0.02 -0.115"
+      rpy="-1.5708 1.5708 0" />
     <parent
       link="hip_link" />
     <child
       link="upper_leg_link" />
     <axis
-      xyz="-1 0 0" />
+      xyz="1 0 0" />
     <limit
       effort="5"
       velocity="3.1416" />
@@ -290,14 +290,14 @@
     name="lower_leg_joint"
     type="revolute">
     <origin
-      xyz="-0.041381 0 0.2"
-      rpy="1.5622 0 0" />
+      xyz="0.03 0 0.2"
+      rpy="0 0 0" />
     <parent
       link="upper_leg_link" />
     <child
       link="lower_leg_link" />
     <axis
-      xyz="-1 0 0" />
+      xyz="1 0 0" />
     <limit
       lower="0"
       upper="3.14"
