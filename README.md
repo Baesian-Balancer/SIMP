@@ -8,9 +8,13 @@ Install the latest pack of models using pip,
 example use case,
  
 `>>> import SIMP`
+
 `>>> print(SIMP.get_model_file("monopod_v1"))`
+
 `/home/dawson/Repos/SIMP/SIMP/monopod_v1/monopod_v1.urdf`
+
 `>>> print(SIMP.get_model_file("ground_plane"))`
+
 `/home/dawson/Repos/SIMP/SIMP/ground_plane/ground_plane.sdf`
 
 can be paired with ignition-gym by Robotology like this,
