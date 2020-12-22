@@ -1,11 +1,14 @@
 # SIMP
 ## Simulation and Instrumentation of Monopod Planarizer
+### Prerequirements
+Please follow the seup instruction repo to get ignition-gym, ignition etc setup before installing SIMP
 
+### Installation
 Install the latest pack of models using pip,
 
 `pip3 install git+https://github.com/Baesian-Balancer/SIMP.git `
 
-example use case,
+### Examples
  
 `>>> import SIMP`
 
