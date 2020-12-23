@@ -1,5 +1,7 @@
 from setuptools.command.build_ext import build_ext
 from setuptools import setup, find_packages, Extension
+import platform
+import os
 
 class CopyMeshes(Extension):
     extension_name = "CopyMeshes"
