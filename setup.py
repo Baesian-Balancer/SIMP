@@ -1,5 +1,5 @@
-import setuptools
 from setuptools.command.build_ext import build_ext
+from setuptools import setup, find_packages, Extension
 
 class CopyMeshes(Extension):
     extension_name = "CopyMeshes"
@@ -48,7 +48,7 @@ class BuildExtension(build_ext):
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setuptools.setup(
+setup(
     name="SIMP",
     version="0.0.1",
     author="Dawson Horvath",
@@ -57,7 +57,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Baesian-Balancer/SIMP",
-    packages=setuptools.find_packages(),  
+    packages=find_packages(),  
     package_data={'SIMP': [
         'meshes/*.*',
         'meshes/**/*.*',
