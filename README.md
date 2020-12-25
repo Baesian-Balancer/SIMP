@@ -68,3 +68,8 @@ for _ in range(int(30.0 / gazebo.step_size())):
 # Close the simulator
 time.sleep(10)
 gazebo.close()```
+
+# NOTE:
+
+We need to import SIMP in a gym gazebo model file for gym-ignition... if the import is held in a function the environment variables will be hidden and unable to be accessed...
+
